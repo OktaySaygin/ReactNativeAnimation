@@ -1,0 +1,19 @@
+import React from 'react';
+import Svg, {Path} from 'react-native-svg';
+
+function IconSearch({ inStrokeColor = '#000000', outStrokeColor = '#000000', fill = "none" }) {
+    return (
+        <Svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <Path d="M21.875 21.875L27.5 27.5" stroke={inStrokeColor} stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+            <Path
+                d="M25 13.75C25 7.5368 19.9633 2.5 13.75 2.5C7.5368 2.5 2.5 7.5368 2.5 13.75C2.5 19.9633 7.5368 25 13.75 25C19.9633 25 25 19.9633 25 13.75Z"
+                stroke={outStrokeColor} strokeWidth="2" strokeLinejoin="round" fill={fill}/>
+            <Path
+                d="M13 7C12.3434 7 11.6932 7.12933 11.0866 7.3806C10.48 7.63188 9.92876 8.00017 9.46447 8.46447C9.00017 8.92876 8.63188 9.47996 8.3806 10.0866C8.12933 10.6932 8 11.3434 8 12"
+                stroke={outStrokeColor} strokeWidth="2" strokeLinecap="round"/>
+        </Svg>
+    );
+}
+
+export default IconSearch;
