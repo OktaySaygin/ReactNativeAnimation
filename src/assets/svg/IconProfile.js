@@ -1,0 +1,17 @@
+import React from 'react';
+import Svg, {Path} from 'react-native-svg';
+
+function IconProfile({ inStrokeColor = '#000000', outStrokeColor = '#000000', fill = "none" }) {
+    return (
+        <Svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <Path
+                d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z"
+                stroke={outStrokeColor} strokeWidth="2" fill={fill}/>
+            <Path
+                d="M8 24.1389C11.5299 20.4417 18.0571 20.2676 21.625 24.1389M18.5898 12.7847C18.5898 14.8749 16.8929 16.5694 14.7996 16.5694C12.7065 16.5694 11.0096 14.8749 11.0096 12.7847C11.0096 10.6945 12.7065 9 14.7996 9C16.8929 9 18.5898 10.6945 18.5898 12.7847Z"
+                stroke={outStrokeColor} strokeWidth="2" strokeLinecap="round"/>
+        </Svg>
+    );
+}
+
+export default IconProfile;
