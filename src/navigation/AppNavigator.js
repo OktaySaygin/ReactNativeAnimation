@@ -46,8 +46,6 @@ function AppNavigator() {
         );
     }
 
-    console.log("theme: ",theme)
-
     return (
         <SafeAreaView style={{flex: 1, backgroundColor: theme === 'light' ? 'white' : 'black'}}>
             <StatusBar
